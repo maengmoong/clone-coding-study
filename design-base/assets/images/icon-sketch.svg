@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon / Graphic  / icon-sketch</title>
+    <g id="Icon-/-Graphic--/-icon-sketch" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="16" cy="16" r="16"></circle>
+        <path d="M16,0 C24.836556,0 32,7.163444 32,16 C32,24.836556 24.836556,32 16,32 C7.163444,32 0,24.836556 0,16 C0,7.163444 7.163444,0 16,0 Z M16,1 C7.71572875,1 1,7.71572875 1,16 C1,24.2842712 7.71572875,31 16,31 C24.2842712,31 31,24.2842712 31,16 C31,7.71572875 24.2842712,1 16,1 Z" id="border" fill="#EBF8FF" fill-rule="nonzero"></path>
+        <g id="Page-1" transform="translate(5.866667, 7.466667)" fill-rule="nonzero">
+            <g id="Group">
+                <g id="Base" fill="#FFAE00">
+                    <polygon id="Polygon" points="10.1333333 18.1866667 0.112 6.544 4.45333333 0.661333333 10.1333333 0.0533333333 15.8133333 0.661333333 20.1546667 6.544"></polygon>
+                </g>
+                <g id="Bottom-Back" transform="translate(0.000000, 6.400000)" fill="#EC6C00">
+                    <polygon id="Polygon-2" points="10.1333333 11.7866667 0.112 0.144 20.1546667 0.144"></polygon>
+                </g>
+                <g id="Bottom-Mid" transform="translate(3.733333, 6.400000)" fill="#FFAE00">
+                    <polygon id="Polygon-3" points="6.4 11.7866667 0.437333333 0.144 12.3626667 0.144"></polygon>
+                </g>
+                <g id="Top-Mid" transform="translate(3.733333, 0.000000)" fill="#FFEFB4">
+                    <polygon id="Polygon-4" points="6.4 0.0533333333 0.437333333 6.544 12.3626667 6.544"></polygon>
+                </g>
+                <g id="Top-Side-Left" transform="translate(0.000000, 0.533333)" fill="#FFAE00">
+                    <polygon id="Polygon-5" points="4.45333333 0.128 2.224 3.088 0.112 6.01066667 4.208 6.01066667"></polygon>
+                </g>
+                <g id="Top-Side-Right" transform="translate(15.466667, 0.533333)" fill="#FFAE00">
+                    <polygon id="Polygon-6" points="0.346666667 0.128 2.576 3.088 4.688 6.01066667 0.586666667 6.01066667"></polygon>
+                </g>
+                <g id="Top-Left" transform="translate(3.733333, 0.000000)" fill="#FED305">
+                    <polygon id="Polygon-7" points="0.72 0.661333333 0.437333333 6.544 6.4 0.0533333333"></polygon>
+                </g>
+                <g id="Top-Right" transform="translate(10.133333, 0.000000)" fill="#FED305">
+                    <polygon id="Polygon-8" points="5.68 0.661333333 5.96266667 6.544 0 0.0533333333"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

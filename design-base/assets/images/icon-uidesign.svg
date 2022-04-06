@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon / Graphic  / icon-uidesign</title>
+    <g id="Icon-/-Graphic--/-icon-uidesign" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" fill="#A5DBFA" cx="16" cy="16" r="16"></circle>
+        <path d="M9.66666667,10.3333333 L22.3333333,10.3333333 C23.9901876,10.3333333 25.3333333,11.6764791 25.3333333,13.3333333 L25.3333333,18.6666667 C25.3333333,20.3235209 23.9901876,21.6666667 22.3333333,21.6666667 L9.66666667,21.6666667 C8.00981242,21.6666667 6.66666667,20.3235209 6.66666667,18.6666667 L6.66666667,13.3333333 C6.66666667,11.6764791 8.00981242,10.3333333 9.66666667,10.3333333 Z" id="Rectangle" fill="#004FFF" transform="translate(16.000000, 16.000000) rotate(-270.000000) translate(-16.000000, -16.000000) "></path>
+        <rect id="Rectangle" fill="#FFFFFF" x="14" y="22.6666667" width="4" height="1" rx="0.5"></rect>
+    </g>
+</svg>

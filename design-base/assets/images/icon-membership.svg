@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon / Graphic  / icon-membership</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#004FFF" offset="0%"></stop>
+            <stop stop-color="#5489FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Icon-/-Graphic--/-icon-membership" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" fill="url(#linearGradient-1)" cx="16" cy="16" r="16"></circle>
+        <polygon id="M" fill="#FFFFFF" fill-rule="nonzero" points="12.3117871 21.6463878 12.3117871 15.3954373 15.4296578 20.5209125 16.539924 20.5209125 19.6730038 15.2585551 19.6882129 21.6463878 22 21.6463878 21.9695817 11 19.9467681 11 16.0228137 17.6159696 12.0380228 11 10 11 10 21.6463878"></polygon>
+    </g>
+</svg>
