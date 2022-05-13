@@ -1,52 +1,117 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+* {margin:0; padding:0; box-sizing:border-box; font-family:"noto", sans-serif; }
+table {border:0; border-collapse:collapse; border-spacing:0; width:100%; font-size:inherit; table-layout:fixed}
+fieldset, img {border:0; vertical-align:top; max-width:100%;}
+address, caption, cite, code, dfn, em, strong, th, var {font-style:normal; font-weight:normal}
+li {list-style-type:none}
+h1, h2, h3, h4, h5, h6 {font-size:100%; font-weight:normal; line-height:1em}
+a {text-decoration:none; color:#333333}
+input, textarea, select {font-family:"noto", sans-serif; font-size:14px;color:#666666; vertical-align:middle; outline: none;}
+body {position:relative; width:100%; font-size:16px; color:#333333}
+legend, hr { overflow:hidden; position:absolute; top:0; left:0}
+legend, hr, caption {display:none}
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+/* input-type */
+input[type=text],
+input[type=password] {border:1px solid #dddddd; padding:0 20px; margin:0; box-sizing:border-box; }
+select {border:1px solid #dddddd;padding:0 20px; margin:0; font-size:14px;-webkit-appearance: none;  /* 네이티브 외형 감추기 */
+	-moz-appearance: none;appearance: none;background: #fff url(../images/select-arrow.png) calc(100% - 20px) no-repeat; }
+/* IE 10, 11의 네이티브 화살표 숨기기 */
+select::-ms-expand {
+	display: none;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+textarea {display:block; resize:none; border:1px solid #dddddd; padding:10px; width:100%; height:170px; font-size:14px; line-height:20px;background:#fff}
+button {border:none; background:none; outline:none; cursor: pointer;}
+/* basic-alink */
+a {text-decoration:none; outline:none}
+/* placeholder color */
+input::-webkit-input-placeholder {color:#999999}
+input:-ms-input-placeholder {color:#999999}
+textarea::-webkit-input-placeholder {color:#999999}
+textarea:-ms-input-placeholder {color:#999999}
+
+@charset "utf-8"; 
+@font-face {
+	font-family: 'noto';
+	font-weight:100;
+	src: url(../fonts/NotoSansKR-Thin.eot); 
+	src: url(../fonts/NotoSansKR-Thin.eot?#iefix) format('embedded-opentype'),
+		url(../fonts/NotoSansKR-Thin.woff) format('woff'), 
+		url(../fonts/NotoSansKR-Thin.ttf) format('truetype'); 
 }
-body {
-	line-height: 1;
+@font-face {
+	font-family: 'noto';
+	font-weight:300;
+	src: url(../fonts/NotoSansKR-Light.eot); 
+	src: url(../fonts/NotoSansKR-Light.eot?#iefix) format('embedded-opentype'),
+		url(../fonts/NotoSansKR-Light.woff) format('woff'), 
+		url(../fonts/NotoSansKR-Light.ttf) format('truetype'); 
 }
-ol, ul {
-	list-style: none;
+@font-face {
+	font-family: 'noto';
+	font-weight:400;
+	src: url(../fonts/NotoSansKR-Regular.eot); 
+	src: url(../fonts/NotoSansKR-Regular.eot?#iefix) format('embedded-opentype'),
+		url(../fonts/NotoSansKR-Regular.woff) format('woff'), 
+		url(../fonts/NotoSansKR-Regular.ttf) format('truetype'); 
 }
-a{
-    color: black;
-    text-decoration: none;
+@font-face {
+	font-family: 'noto';
+	font-weight:500;
+	src: url(../fonts/NotoSansKR-Medium.eot); 
+	src: url(../fonts/NotoSansKR-Medium.eot?#iefix) format('embedded-opentype'),
+		url(../fonts/NotoSansKR-Medium.woff) format('woff'), 
+		url(../fonts/NotoSansKR-Medium.ttf) format('truetype'); 
 }
-blockquote, q {
-	quotes: none;
+@font-face {
+	font-family: 'noto';
+	font-weight:700;
+	src: url(../fonts/NotoSansKR-Bold.eot); 
+	src: url(../fonts/NotoSansKR-Bold.eot?#iefix) format('embedded-opentype'),
+		url(../fonts/NotoSansKR-Bold.woff) format('woff'), 
+		url(../fonts/NotoSansKR-Bold.ttf) format('truetype'); 
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+@font-face {
+	font-family: 'noto';
+	font-weight:900;
+	src: url(../fonts/NotoSansKR-Black.eot); 
+	src: url(../fonts/NotoSansKR-Black.eot?#iefix) format('embedded-opentype'),
+		url(../fonts/NotoSansKR-Black.woff) format('woff'), 
+		url(../fonts/NotoSansKR-Black.ttf) format('truetype'); 
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+@font-face {
+	font-family: 'OpenSans';
+	font-style: normal;
+	font-weight: 300;
+	src: url('../fonts/OpenSans-Light.woff') format('woff');
+}
+@font-face {
+	font-family: 'OpenSans';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/OpenSans-Regular.woff') format('woff');
+}
+@font-face {
+	font-family: 'OpenSans';
+	font-style: normal;
+	font-weight: 500;
+	src: url('../fonts/OpenSans-Semibold.woff') format('woff');
+}
+@font-face {
+	font-family: 'OpenSans';
+	font-style: normal;
+	font-weight: 700;
+	src:url('../fonts/OpenSans-Bold.woff') format('woff');
+}
+@font-face {
+	font-family: 'OpenSans';
+	font-style: normal;
+	font-weight: 900;
+	src:url('../fonts/OpenSans-ExtraBold.woff') format('woff');
+}
+@font-face { 
+	font-family: ‘yangjin’;  
+	font-weight: normal; 
+	font-style: normal;
+	src:url('../fonts/yangjin.woff') format('woff'); 
 }

@@ -1,4 +1,69 @@
 @charset "utf-8";
 
 /*layout*/
-.inner{max-width: 1200px; border: 1px solid #ccc; margin: auto;}
+*{ font-family: 'NotoSans', sans-serif; font-size: 14px; color: #171718; font-weight: 400;}
+.inner{max-width: 1200px; margin: auto; height: 100%;}
+
+
+/*common*/
+a{cursor: pointer;}
+.btn-blue{ transition: all 0.4s; background-color:#004fff; border: 1px solid #4c83ff; box-shadow: 0 4px 12px rgb(0 79 255 / 40%); color: white;}
+.btn-blue:hover{ box-shadow: 0 2px 2px rgb(0 79 255 / 40%);}
+.sr-only{font-size: 0px;}
+h2.sec-tit{padding-bottom: 10px;}
+h2.sec-tit + span{display: block; color:#32353a; font-size: 15px; padding-bottom: 25px;}
+h2.sec-tit span{transition: all 0.4s; padding-right: 20px; position: relative; font-size: 24px; font-weight: 700; color: #171718;}
+h2.sec-tit span::after{transition: all 0.4s; position: absolute; top: calc(50% - 7.5px); right: 0; display: block; content: ""; width: 15px; height: 15px;  background: url('../images/ic-shorten.png') no-repeat center center/contain;}
+h2.sec-tit:hover span, h2.sec-tit:hover span::after{opacity: 0.6;}
+.section-link{display: inline-block; margin-top: 10px; margin-bottom: 30px; background-color: #EEF2F6; color: #32353a; font-size: 12px; padding:  3px 6px; border-radius: 4px; vertical-align: middle;}
+ul.main-list{display: flex; flex-wrap: wrap; gap: 20px;}
+ul.main-list li{width: calc(25% - 15px);}
+ul.main-list .img-box{overflow: hidden; position: relative;}
+ul.main-list .img-box + p{margin-top: 10px; font-size: 15px; color: #171718;}
+ul.main-list .img-box a{display: block; height: 100%; width: 100%; position: relative;}
+ul.main-list .img-box img{width: 100%; height: 100%; border-radius: 10px; border: 1px solid rgb(236, 236, 236);}
+.ic{border-radius: 100%; width: 24px; height: 24px; position: absolute; top: 10px; left: 10px;}
+.ic-xd{background:url(http://designbase.co.kr/wp-content/themes/designbase/assets/svg/icon-adobexd.svg) no-repeat center;}
+.ic-ai{background:url(http://designbase.co.kr/wp-content/themes/designbase/assets/svg/icon-illustrator.svg) no-repeat center;}
+.ic-ps{background:url(http://designbase.co.kr/wp-content/themes/designbase/assets/svg/icon-photoshop.svg) no-repeat center ;}
+.ic-sketch{background:url(http://designbase.co.kr/wp-content/themes/designbase/assets/svg/icon-sketch.svg) no-repeat center}
+.ic-figma{background:url(http://designbase.co.kr/wp-content/themes/designbase/assets/svg/icon-figma.svg) no-repeat center}
+.ic-proto{background:url(http://designbase.co.kr/wp-content/themes/designbase/assets/svg/icon-protopie.svg) no-repeat center}
+.ic-prin{background: url(http://designbase.co.kr/wp-content/themes/designbase/assets/svg/icon-principle.svg) no-repeat center;}
+.ic-in{background: url(http://designbase.co.kr/wp-content/themes/designbase/assets/svg/icon-invision.svg) no-repeat center;}
+.ic-design{background:url(http://designbase.co.kr/wp-content/themes/designbase/assets/svg/icon-web.svg) no-repeat center}
+.ic-coding{background:url(http://designbase.co.kr/wp-content/themes/designbase/assets/svg/icon-coding.svg) no-repeat center}
+.ic-lottie{background: url(http://designbase.co.kr/wp-content/themes/designbase/assets/svg/icon-lottiejs.svg) no-repeat center;}
+.ic-zeplin{background: url(http://designbase.co.kr/wp-content/themes/designbase/assets/svg/icon-lottiejs.svg) no-repeat center;}
+.ic-trhee{background: url(http://designbase.co.kr/wp-content/themes/designbase/assets/svg/icon-threejs.svg) no-repeat center;}
+.ic-ui{background: url(http://designbase.co.kr/wp-content/themes/designbase/assets/svg/icon-uidesign.svg) no-repeat center;}
+.ic-ae{background: url(http://designbase.co.kr/wp-content/themes/designbase/assets/svg/icon-aftereffect.svg) no-repeat center;}
+.ic-pr{background: url(http://designbase.co.kr/wp-content/themes/designbase/assets/svg/icon-premiere.svg) no-repeat center;}
+.icc-word{background: url(http://designbase.co.kr/wp-content/themes/designbase/assets/svg/icon-wordpress.svg) no-repeat center;}
+
+
+
+/*header*/
+.headerWrapper{position: relative; overflow: hidden;}
+header{ height: 68px; background-color: transparent;  background-color: #EEF2F6;}
+header .inner{display: flex; justify-content: space-between; align-items: center;}
+.logo{z-index: 20; width: 200px; height: 30px; display: block; border: 1px solid rebeccapurple; background-color: url('../images/logotype.svg') no-repeat center; background-size: contain;}
+nav{display: flex; align-items: center; gap:15px; justify-content: space-between;}
+nav a.btn-blue{padding: 8px; border-radius: 8px; margin-left: 10px;}
+button.search-btn{width: 20px; height: 20px; background: url('../images/ic-search.png') no-repeat center center/cover;  }
+.gnb{display: flex; gap: 15px; z-index: 20;}
+
+
+
+/*main-visual*/
+.main-visual{padding: 50px 0;  width: 100%; background-color: #EEF2F6;}
+.main-visual p{text-align: center; color: block; font-size: 46px; font-weight: bold; line-height: 1.2; letter-spacing:-3px; margin-bottom: 30px;}
+.main-visual .btn-blue{ display: block; margin: auto; max-width: 150px; padding: 13px 10px; border-radius: 8px; font-size: 14px; font-weight: 400;}
+.bg-circle{ position: absolute; border-radius: 100%;}
+.bg-circle.sm{ right: 33%; top:70px; width: 20vw; height: 20vw; background:linear-gradient(to bottom, #C4D1F2 0%, #A3F4F6 100%)}
+.bg-circle.bg{left:-15%; top: -100px; width: 70vw; height: 70vw; background-color: rgba(255,255,255,0.02); backdrop-filter: blur(10px); box-shadow: 0 8px 32px 0 rgb(31 38 135 / 10%);border: 1px solid rgba(0, 0, 0, 0.027);}
+.main-visual .textArea{position: relative; z-index: 20;}
+
+/*section-recent*/
+.section-recent{padding-top: 30px;}
+
