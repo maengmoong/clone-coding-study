@@ -2,7 +2,10 @@
 
 /*layout*/
 *{ font-family: 'NotoSans', sans-serif; font-size: 14px; color: #171718; font-weight: 400;}
-.inner{max-width: 1200px; margin: auto; height: 100%;}
+.inner{max-width: 1200px; margin: auto; height: 100%; padding: 0 20px;}
+@media screen and (max-width: 768px) {
+    .inner{width: 97%;}
+}
 
 
 /*common*/
@@ -22,11 +25,12 @@ ul.main-list .img-box{overflow: hidden; position: relative;}
 ul.main-list .img-box + p{margin-top: 10px; font-size: 15px; color: #171718;}
 ul.main-list .img-box a{display: block; height: 100%; width: 100%; position: relative;}
 ul.main-list .img-box img{width: 100%; height: 100%; border-radius: 10px; border: 1px solid rgb(236, 236, 236);}
+.img-box p{display: block; margin-top: 10px; font-size: 15px;}
 .ic{border-radius: 100%; width: 24px; height: 24px; position: absolute; top: 10px; left: 10px;}
 .ic-xd{background:url(http://designbase.co.kr/wp-content/themes/designbase/assets/svg/icon-adobexd.svg) no-repeat center;}
 .ic-ai{background:url(http://designbase.co.kr/wp-content/themes/designbase/assets/svg/icon-illustrator.svg) no-repeat center;}
 .ic-ps{background:url(http://designbase.co.kr/wp-content/themes/designbase/assets/svg/icon-photoshop.svg) no-repeat center ;}
-.ic-sketch{background:url(http://designbase.co.kr/wp-content/themes/designbase/assets/svg/icon-sketch.svg) no-repeat center}
+.ic-sketh{background:url(http://designbase.co.kr/wp-content/themes/designbase/assets/svg/icon-sketch.svg) no-repeat center}
 .ic-figma{background:url(http://designbase.co.kr/wp-content/themes/designbase/assets/svg/icon-figma.svg) no-repeat center}
 .ic-proto{background:url(http://designbase.co.kr/wp-content/themes/designbase/assets/svg/icon-protopie.svg) no-repeat center}
 .ic-prin{background: url(http://designbase.co.kr/wp-content/themes/designbase/assets/svg/icon-principle.svg) no-repeat center;}
@@ -40,7 +44,10 @@ ul.main-list .img-box img{width: 100%; height: 100%; border-radius: 10px; border
 .ic-ae{background: url(http://designbase.co.kr/wp-content/themes/designbase/assets/svg/icon-aftereffect.svg) no-repeat center;}
 .ic-pr{background: url(http://designbase.co.kr/wp-content/themes/designbase/assets/svg/icon-premiere.svg) no-repeat center;}
 .icc-word{background: url(http://designbase.co.kr/wp-content/themes/designbase/assets/svg/icon-wordpress.svg) no-repeat center;}
-
+.ic-three{background: url(http://designbase.co.kr/wp-content/themes/designbase/assets/svg/icon-threejs.svg) no-repeat center;}
+.ic-word{background: url(http://designbase.co.kr/wp-content/themes/designbase/assets/svg/icon-wordpress.svg) no-repeat center;}
+.ic-membership{left: 40px; background: url(http://designbase.co.kr/wp-content/themes/designbase/assets/svg/icon-membership.svg) no-repeat center;}
+section{margin-top: 100px;}
 
 
 /*header*/
@@ -67,3 +74,29 @@ button.search-btn{width: 20px; height: 20px; background: url('../images/ic-searc
 /*section-recent*/
 .section-recent{padding-top: 30px;}
 
+
+/*section-sort*/
+ul.sort-list{display: flex; flex-wrap: wrap; gap: 20px;}
+ul.sort-list li{transition: all 0.4s; position: relative; width: calc(16.66666% - 17px);  border: 1px solid #E3EDF2; border-radius: 6px;}
+ul.sort-list li:hover{box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.034);}
+ul.sort-list li a{width: 100%; height: 100%; display: block; padding: 20px 20px 20px 50px;}
+ul.sort-list .ic{ position: absolute; left: 20px; top: 30px; transform: translateY(-50%);box-sizing: border-box;}
+
+/*section-banner*/
+.section-banner{ background-color: #000; box-sizing: border-box;}
+.section-banner .inner{align-items: center; overflow: hidden; display: flex; justify-content: space-between; height: 220px;  box-sizing: border-box;}
+.section-banner .textArea p, span, a{color: white;}
+.section-banner .textArea p{font-size: 24px; font-weight: 700;}
+.section-banner .textArea span{font-size: 16px; font-weight: 300; display: block; margin-top: 10px;}
+.section-banner .textArea a{margin-top: 20px; background: #004fff; font-weight: 100; color: white; display: inline-block; padding: 10px; border-radius: 6px; border: 1px solid #4c83ff; box-shadow: 0 4px 12px rgb(0 79 255 / 40%);}
+.section-banner .imgArea{  position: relative; top: 100px; padding-top: 28%; width: 65%;}
+.section-banner .imgArea .bannerImg01{ position: absolute; top: 0; left: 0; width: 83%; height: 100%; background: url(../images/banner_img_1.png) no-repeat center center; background-size: contain;}
+.section-banner .imgArea .bannerImg02{ position: absolute; top: 22px; right: -14px; width: 30%; height: 100%; background: url(../images/banner_img_2.png) no-repeat center center; background-size: contain;}
+
+
+/*section-freebies*/
+.section-freebies .img-box img{border-radius: 10px 10px 0 0 !important; overflow: hidden; transition: all .4s; border: 1px solid red;}
+.section-freebies .img-box a{ overflow: hidden; border-radius: 10px 10px 0 0;}
+.section-freebies .img-box a:hover img{transform: scale(1.1);}
+.section-freebies .img-box a:hover .section-freebies .img-box p{box-shadow: 2px 2px 3px 3px #000 inset; border: 1px solid red;}
+.section-freebies .img-box p{margin: 0; padding: 15px; border-radius: 0 0 10px 10px; background-color: #eef2f6;}
