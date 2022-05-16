@@ -25,7 +25,6 @@ ul.main-list .img-box{overflow: hidden; position: relative;}
 ul.main-list .img-box + p{margin-top: 10px; font-size: 15px; color: #171718;}
 ul.main-list .img-box a{display: block; height: 100%; width: 100%; position: relative;}
 ul.main-list .img-box img{width: 100%; height: 100%; border-radius: 10px; border: 1px solid rgb(236, 236, 236);}
-.img-box p{display: block; margin-top: 10px; font-size: 15px;}
 .ic{border-radius: 100%; width: 24px; height: 24px; position: absolute; top: 10px; left: 10px;}
 .ic-xd{background:url(http://designbase.co.kr/wp-content/themes/designbase/assets/svg/icon-adobexd.svg) no-repeat center;}
 .ic-ai{background:url(http://designbase.co.kr/wp-content/themes/designbase/assets/svg/icon-illustrator.svg) no-repeat center;}
@@ -52,13 +51,31 @@ section{margin-top: 100px;}
 
 /*header*/
 .headerWrapper{position: relative; overflow: hidden;}
-header{ height: 68px; background-color: transparent;  background-color: #EEF2F6;}
+header{position: relative; border: 1px solid transparent; transition: all 0.2s; height: 68px; background-color: transparent;  background-color: #EEF2F6;}
+header.scroll{height: 60px; border-bottom: 1px solid rgba(221, 221, 221, 0.363); transition: all 0.2s; z-index: 999; width: 100%; background-color: #Fff; position: fixed; top: 0; left: 0;}
 header .inner{display: flex; justify-content: space-between; align-items: center;}
 .logo{z-index: 20; width: 200px; height: 30px; display: block; border: 1px solid rebeccapurple; background-color: url('../images/logotype.svg') no-repeat center; background-size: contain;}
 nav{display: flex; align-items: center; gap:15px; justify-content: space-between;}
-nav a.btn-blue{padding: 8px; border-radius: 8px; margin-left: 10px;}
-button.search-btn{width: 20px; height: 20px; background: url('../images/ic-search.png') no-repeat center center/cover;  }
+nav a.btn-blue{padding: 8px; border-radius: 8px; margin-left: 10px; z-index: 999;}
+button.search-btn{z-index: 999; width: 20px; height: 20px; background: url('../images/ic-search.png') no-repeat center center/cover;  }
 .gnb{display: flex; gap: 15px; z-index: 20;}
+.searchSiteMap{ transition: all 0.3s; opacity: 0; visibility: hidden; width: 100%; height: 100vh; }
+.searchSiteMap .search-bg{width: 100%; height: 100vh; background-color: rgba(0, 0, 0, 0.63);} 
+.searchSiteMap.scroll{ transition: all 0.3s; opacity: 1; visibility: visible;}
+.searchContainer{ transition: all 0.4s; padding: 100px 0; background-color: rgb(255, 255, 255); width: 100%; position: absolute; top: -500px; left: 0;}
+.searchContainer.scroll{ transition: all 0.4s; top: 0px !important;}
+.searchContainer .inner{flex-direction: column; justify-content: flex-start;}
+.searchContainer form{ position: relative; border-radius: 10px; background-color: #EEF2F6; width: 100%; height: 48px;}
+.searchContainer input{padding-left: 30px; border: 1px solid red !important; border-radius: 10px; transition: all 0.3s; border: 0px solid transparent !important; outline: none; background: none; width: 100%; height: 100%;}
+.searchContainer form i.ic-search{ position: absolute; left: 15px; top: 50%; transform: translateY(-50%); display: block; width: 20px; height: 20px; background: url(../images/ic-search.png) no-repeat center center; background-size: cover;}
+.searchContainer input::placeholder{font-size: 24px; vertical-align: middle;  padding-left: 30px;}
+.searchContainer input:focus {border: 1px solid #004fff !important; border-radius: 10px;}
+.searchContainer .sort-tags{margin-top: 30px; display: flex; gap: 10px; flex-wrap: wrap;}
+.searchContainer .sort-tags a{transition: all 0.3s; background-color: #EEF2F6; padding: 10px 15px;  border-radius: 10px; display: flex; justify-content: space-between; gap: 8px;}
+.searchContainer .sort-tags a:hover{transition: all 0.3s; background: #004fff; color: white;}
+.searchContainer .sort-tags a:hover span{transition: all 0.3s; color: white !important;}
+.searchContainer .sort-tags a span.sort-name{ color: #3f3f42; font-weight: 200;}
+.searchContainer .sort-tags a span.count{ color: #949496; font-weight: 400; font-size: 13px;}
 
 
 
@@ -93,10 +110,21 @@ ul.sort-list .ic{ position: absolute; left: 20px; top: 30px; transform: translat
 .section-banner .imgArea .bannerImg01{ position: absolute; top: 0; left: 0; width: 83%; height: 100%; background: url(../images/banner_img_1.png) no-repeat center center; background-size: contain;}
 .section-banner .imgArea .bannerImg02{ position: absolute; top: 22px; right: -14px; width: 30%; height: 100%; background: url(../images/banner_img_2.png) no-repeat center center; background-size: contain;}
 
+/*section-snack*/
+.section-snack .img-box p{margin-top: 10px;}
+
 
 /*section-freebies*/
 .section-freebies .img-box img{border-radius: 10px 10px 0 0 !important; overflow: hidden; transition: all .4s; border: 1px solid red;}
 .section-freebies .img-box a{ overflow: hidden; border-radius: 10px 10px 0 0;}
 .section-freebies .img-box a:hover img{transform: scale(1.1);}
 .section-freebies .img-box a:hover .section-freebies .img-box p{box-shadow: 2px 2px 3px 3px #000 inset; border: 1px solid red;}
-.section-freebies .img-box p{margin: 0; padding: 15px; border-radius: 0 0 10px 10px; background-color: #eef2f6;}
+.section-freebies .img-box .txtArea{margin: 0; padding: 15px; border-radius: 0 0 10px 10px; background-color: #eef2f6;}
+.section-freebies .img-box .txtArea p a{font-size: 16px !important;}
+.section-freebies .img-box .txtArea .field span{font-size: 14px !important; position: relative; margin-right: 5px; color: rgb(131, 131, 131); padding-top: 8px; display: inline-block;}
+.section-freebies .img-box .txtArea .field span:not(:last-of-type):after{ display: block; content: ""; width: 4px; height: 4px; border-radius: 100%; background-color: rgb(196, 196, 196); position: absolute; right: -7px; top: 50%;}
+
+
+/*footer*/
+footer{background: #000;}
+footer .alert{display: block; margin: auto; text-align: center; padding: 30px 0; border-bottom: 1px solid rgb(44, 44, 44); color: #C5CAD5;}

@@ -7,10 +7,12 @@
     <title>클론코딩│디자인베이스</title>
     <link rel="stylesheet" href="../assets/css/common.css">
     <link rel="stylesheet" href="../assets/css/reset.css">
+    <script src="../assets/js/jquery-1.10.2.min.js"></script>
+    <script src="../assets/js/common.js"></script>
 </head>
 <body>
     <div class="headerWrapper">
-        <header>
+        <header class="header">
             <div class="inner">
                 <h1 class="logo"><span class="sr-only">DESIGN BASE</span></h1>
                 <nav>
@@ -26,6 +28,68 @@
                     <button class="search-btn"><span class="sr-only">more</span></button>
                 </nav>
             </div>
+            <div class="searchSiteMap">
+                <div class="search-bg"></div>
+                <div class="searchContainer">
+                    <div class="inner">
+                        <form for="search">
+                            <input type="text" placeholder="검색어를 입력해주세요.">
+                            <i class="ic-search"></i>
+                        </form>
+                        <div class="sort-tags">
+                            <a href="#">
+                                <span class="sort-name">UIUX</span>
+                                <span class="count">41</span>
+                            </a>
+                            <a href="#">
+                                <span class="sort-name">포토샵</span>
+                                <span class="count">38</span>
+                            </a>
+                            <a href="#">
+                                <span class="sort-name">웹코딩</span>
+                                <span class="count">28</span>
+                            </a>
+                            <a href="#">
+                                <span class="sort-name">웹코딩강좌</span>
+                                <span class="count">22</span>
+                            </a>
+                            <a href="#">
+                                <span class="sort-name">일러스트레이터</span>
+                                <span class="count">53</span>
+                            </a>
+                            <a href="#">
+                                <span class="sort-name">스케치</span>
+                                <span class="count">12</span>
+                            </a>
+                            <a href="#">
+                                <span class="sort-name">프로토타입</span>
+                                <span class="count">17</span>
+                            </a>
+                            <a href="#">
+                                <span class="sort-name">프로토파이</span>
+                                <span class="count">19</span>
+                            </a>
+                            <a href="#">
+                                <span class="sort-name">CSS</span>
+                                <span class="count">20</span>
+                            </a>
+                            <a href="#">
+                                <span class="sort-name">웹디자인</span>
+                                <span class="count">20</span>
+                            </a>
+                            <a href="#">
+                                <span class="sort-name">protopie</span>
+                                <span class="count">31</span>
+                            </a>
+                            <a href="#">
+                                <span class="sort-name">그래픽디자인</span>
+                                <span class="count">17</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </header>
         <div class="main-visual">
             <div class="inner">
@@ -404,80 +468,96 @@
                 <li>
                     <div class="img-box">
                         <a href="#"><img src="../assets/images/freebies_1.jpg" alt=""></a>
-                        <p><a href="#">New 맥북 16인치 목업</a></p>
-                        <div class="field">
-                            <span>is graphics</span>
-                            <span>psd</span>
+                        <div class="txtArea">
+                            <p><a href="#">New 맥북 16인치 목업</a></p>
+                            <div class="field">
+                                <span>is graphics</span>
+                                <span>psd</span>
+                            </div>
                         </div>
                     </div>
                 </li>
                 <li>
                     <div class="img-box">
                         <a href="#"><img src="../assets/images/freebies_2.jpg" alt=""></a>
-                        <p><a href="#">롤업 스탠딩 배너 목업</a></p>
-                        <div class="field">
-                            <span>is graphics</span>
-                            <span>psd</span>
+                        <div class="txtArea">
+                            <p><a href="#">롤업 스탠딩 배너 목업</a></p>
+                            <div class="field">
+                                <span>is graphics</span>
+                                <span>psd</span>
+                            </div>
                         </div>
                     </div>
                 </li>
                 <li>
                     <div class="img-box">
                         <a href="#"><img src="../assets/images/freebies_3.jpg" alt=""></a>
-                        <p><a href="#">Deca UI Kit</a></p>
-                        <div class="field">
-                            <span>Craftwork</span>
-                            <span>Sketch, Figma</span>
+                        <div class="txtArea">
+                            <p><a href="#">Deca UI Kit</a></p>
+                            <div class="field">
+                                <span>Craftwork</span>
+                                <span>Sketch, Figma</span>
+                            </div>
                         </div>
                     </div>
                 </li>
                 <li>
                     <div class="img-box">
                         <a href="#"><img src="../assets/images/freebies_4.jpg" alt=""></a>
-                        <p><a href="#">Userpics</a></p>
-                        <div class="field">
-                            <span>Craftwork</span>
-                            <span>Sketch, Figma</span>
+                        <div class="txtArea">
+                            <p><a href="#">Userpics</a></p>
+                            <div class="field">
+                                <span>Craftwork</span>
+                                <span>Sketch, Figma</span>
+                            </div>
                         </div>
                     </div>
                 </li>
                 <li>
                     <div class="img-box">
                         <a href="#"><img src="../assets/images/freebies_5.jpg" alt=""></a>
-                        <p><a href="#">아이패드 미니 목업</a></p>
-                        <div class="field">
-                            <span>is graphics</span>
-                            <span>psd</span>
+                        <div class="txtArea">
+                            <p><a href="#">아이패드 미니 목업</a></p>
+                            <div class="field">
+                                <span>is graphics</span>
+                                <span>psd</span>
+                            </div>
                         </div>
                     </div>
                 </li>
                 <li>
                     <div class="img-box">
                         <a href="#"><img src="../assets/images/freebies_6.jpg" alt=""></a>
-                        <p><a href="#">스프링 노트 목업</a></p>
-                        <div class="field">
-                            <span>is graphics</span>
-                            <span>psd</span>
+                        <div class="txtArea">
+                            <p><a href="#">스프링 노트 목업</a></p>
+                            <div class="field">
+                                <span>is graphics</span>
+                                <span>psd</span>
+                            </div>
                         </div>
                     </div>
                 </li>
                 <li>
                     <div class="img-box">
                         <a href="#"><img src="../assets/images/freebies_7.jpg" alt=""></a>
-                        <p><a href="#">스티커 패키지 목업</a></p>
-                        <div class="field">
-                            <span>is graphics</span>
-                            <span>psd</span>
+                        <div class="txtArea">
+                            <p><a href="#">스티커 패키지 목업</a></p>
+                            <div class="field">
+                                <span>is graphics</span>
+                                <span>psd</span>
+                            </div>
                         </div>
                     </div>
                 </li>
                 <li>
                     <div class="img-box">
                         <a href="#"><img src="../assets/images/freebies_8.jpg" alt=""></a>
-                        <p><a href="#">iPhone 13 Pro & iPhone Pro Hands 목업</a></p>
-                        <div class="field">
-                            <span>Pierre Borodin</span>
-                            <span>psd, sketch</span>
+                        <div class="txtArea">
+                            <p><a href="#">iPhone 13 Pro & iPhone Pro Hands 목업</a></p>
+                            <div class="field">
+                                <span>Pierre Borodin</span>
+                                <span>psd, sketch</span>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -485,10 +565,52 @@
         </div>
     </section>
     <footer>
-        <span>크롬 브라우저에 최적화되어있습니다. 사이트가 이상하게 보이면 브라우저 설정에서 캐시를 삭제해주세요.</span>
-        <div class="inner">
-            
+        <span class="alert">크롬 브라우저에 최적화되어있습니다. 사이트가 이상하게 보이면 브라우저 설정에서 캐시를 삭제해주세요.</span>
+        <div class="foot-link inner">
+            <div class="col">
+                <ul>
+                    <span class="foot-menu">강좌 바로가기</span>
+                    <li><a href="#">포토샵 강좌</a></li>
+                    <li><a href="#">일러스트레이터 강좌</a></li>
+                    <li><a href="#">스케치 강좌</a></li>
+                    <li><a href="#">피그마 강좌</a></li>
+                    <li><a href="#">어도비 XD 강좌</a></li>
+                    <li><a href="#">프로토파이 강좌</a></li>
+                    <li><a href="#">인비전 강좌</a></li>
+                    <li><a href="#">프린서플 강좌</a></li>
+                    <li><a href="#">멤버십 전용 강좌</a></li>
+                    <li><a href="#">웹디자인 입문 강좌</a></li>
+                    <li><a href="#">웹 코딩 입문 강좌</a></li>
+                    <li><a href="#">Lottie 강좌</a></li>
+                    <li><a href="#">방구석 클래스</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <span class="foot-menu">디자인베이스</span>
+                <ul>
+                    <li><a href="#">소개</a></li>
+                    <li><a href="#">멤버십 소개</a></li>
+                    <li><a href="#">문의하기</a></li>
+                    <li><a href="#">개인정보보호정책</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <span class="foot-menu">페이지 바로가기</span>
+                <li><a href="#">디자이너 북마크</a></li>
+                <li><a href="#">매거진</a></li>
+                <li><a href="#">무료소스</a></li>
+                <li><a href="#">밋업</a></li>
+            </div>
         </div>
+        <address class="inner">
+            <div class="copy">© 2022 Designbase. All rights reserved.</div>
+            <ul>
+                <li><a href="#"><span>유튜브</span></a></li>
+                <li><a href="#"><span>핀터레스트</span></a></li>
+                <li><a href="#"><span>인스타그램</span></a></li>
+                <li><a href="#"><span>블로그</span></a></li>
+            </ul>
+        </address>
     </footer>
 </body>
 </html>
